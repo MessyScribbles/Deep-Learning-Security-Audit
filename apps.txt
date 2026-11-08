@@ -1,0 +1,27 @@
+BrijPay is a microservices-based mobile peer-to-peer (P2P) banking and digital wallet application designed for fast peer transfers, utility bill payments, and micro-savings accounts. The application handles high-throughput financial transactions and sensitive user data.
+
+System Architecture & Tech Stack:
+
+Frontend: Cross-platform React Native mobile application connecting to backend systems via a single public gateway.
+
+API Gateway & Routing: Envoy Proxy handles external request routing, TLS termination, and basic rate-limiting. It forwards requests internally to core microservices via unencrypted HTTP/1.1 over a local private virtual network.
+
+Microservices Engine:
+
+User Authentication Service: A Node.js Express service handling user enrollment, biometric login hooks, and session management. It issues stateless JSON Web Tokens (JWT) signed with a static HS256 secret key hardcoded in the service configuration file.
+
+Transaction & Wallet Service: A Go-based service processing payments, account balancing, and peer transfers. It communicates synchronously with the ledger database.
+
+Notification Service: A Python FastAPI worker that listens to transaction events and pushes alerts to users via third-party webhooks.
+
+Data Layer:
+
+Primary Ledger: PostgreSQL cluster handling user balances and transactional history. Account records use incremental integer IDs (/api/wallet/balance?account_id=10042) for querying balance profiles.
+
+Session Cache: An unauthenticated Redis instance running inside the private subnet to store temporary user session variables and active authentication states.
+
+Data Flow & Telemetry:
+
+A mobile user logs in, receives a JWT, and initiates a transfer. The Transaction Service verifies the balance by executing a raw SQL query string concatenated with the incoming account_id text to update the ledger.
+
+Receipts and logs containing unencrypted Personally Identifiable Information (PII) like names, phone numbers, and bank routing numbers are dumped directly to a shared internal S3 storage bucket for the business analytics team.

@@ -1,0 +1,10 @@
+streamlit
+requests
+fpdf
+PyPDF2
+python-docx
+fastapi
+uvicorn[standard]
+transformers
+torch
+chromadb

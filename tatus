@@ -1,0 +1,30 @@
+[35mapi_server.py[m[36m:[m            "audit_id": f"[1;31mTNA[m-{datetime.datetime.now().strftime('%Y%m%d%H%M')}"
+[35mdashboard.py[m[36m:[m            self.cell(100, 10, ' [1;31mTNA[m CONSULTING', 0, 0, 'L')
+[35mdashboard.py[m[36m:[m        self.cell(0, 10, f'Page {self.page_no()} | CONFIDENTIAL - [1;31mTNA[m Consulting', 0, 0, 'C')
+[35mdashboard.py[m[36m:[m    .[1;31mtna[m-badges { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 5px; }
+[35mdashboard.py[m[36m:[m    .[1;31mtna[m-badge { background: rgba(212, 163, 115, 0.1); border: 1px solid rgba(212, 163, 115, 0.3); color: #D4A373; padding: 4px 12px; border-radius: 6px; font-size: 0.75rem; font-family: monospace; font-weight: 600; }
+[35mdashboard.py[m[36m:[m        st.markdown("### [1;31mTNA[m SECURITY")
+[35mdashboard.py[m[36m:[m    with c_meta1: client_input = st.text_input("Client ID", placeholder="e.g. [1;31mTNA[m")
+[35mdashboard.py[m[36m:[m        base_html = '<div class="live-console"><div class="console-header"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="console-title">[1;31mTNA[m Neural Core</span></div><div class="console-body">'
+[35mdashboard.py[m[36m:[m                '<div class="[1;31mtna[m-badges">'
+[35mdashboard.py[m[36m:[m                f'<span class="[1;31mtna[m-badge">CWE: {f.get("cwe", "N/A")}</span>'
+[35mdashboard.py[m[36m:[m                f'<span class="[1;31mtna[m-badge">OWASP: {f.get("owasp", "N/A")}</span>'
+[35mdashboard.py[m[36m:[m                f'<span class="[1;31mtna[m-badge">CVSS: {f.get("cvss", "N/A")}</span>'
+[35minstall.bat[m[36m:[mTITLE [1;31mTNA[m Platform Installer
+[35minstall.bat[m[36m:[mecho [1;31mTNA[m Consulting - Environment Setup
+[35mmodel_final/tokenizer.json[m[36m:[m      "vie[1;31mtna[mm": 5148,
+[35mmodel_final/tokenizer.json[m[36m:[m      "vie[1;31mtna[mmese": 9101,
+[35mmodel_final/tokenizer.json[m[36m:[m      "[1;31mtna[m": 20108,
+[35mmodel_final/tokenizer.json[m[36m:[m      "pu[1;31mtna[mm": 20230,
+[35mmodel_final/tokenizer.json[m[36m:[m      "##u[1;31mtna[mnt": 24620,
+[35mmodel_final/tokenizer.json[m[36m:[m      "pa[1;31mtna[m": 29565,
+[35mrag_sources/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.md[m[36m:[mIf the Origin header is not present, verify that the hos[1;31mtna[mme in the Referer header matches the target origin. This method of CSRF mitigation is also commonly used with unauthenticated requests, such as requests made prior to establishing a session state, which is required to keep track of a synchronization token.
+[35mrag_sources/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.md[m[36m:[mGenerally, it's not always easy to determine the target origin. You are not always able to simply grab the target origin (i.e., its hos[1;31mtna[mme and port `#`) from the URL in the request, because the application server is frequently sitting behind one or more proxies. This means that the original URL can be different from the URL the app server actually receives. However, if your application server is directly accessed by its users, then using the origin in the URL is fine and you're all set.
+[35mrag_sources/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md[m[36m:[mOne problem is the improper encoding that can still allow exploitable XSS in some URI paths of your application. An example might be a 'las[1;31mtna[mme' form parameter from a POST that normally is displayed between HTML tags so that HTML encoding is sufficient, but there may be an edge case or two where las[1;31mtna[mme is actually rendered as part of a JavaScript block where the HTML encoding is not sufficient and thus it is vulnerable to XSS attacks.
+[35mrag_sources/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md[m[36m:[mA second problem with this approach can be the application can result in incorrect or double encoding. E.g., suppose in the previous example, a developer has done proper output encoding for the JavaScript rendering of las[1;31mtna[mme. But if it is already been HTML output encoded too, when it is rendered, a legitimate last name like "O'Hara" might come out rendered like "O\&#39;Hara".
+[35mrag_sources/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md[m[36m:[mString cus[1;31mtna[mme = request.getParameter("customerName");
+[35mrag_sources/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md[m[36m:[mpstmt.setString( 1, cus[1;31mtna[mme);
+[35mrag_sources/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md[m[36m:[mString cus[1;31mtna[mme = request.getParameter("customerName");
+[35mrag_sources/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md[m[36m:[m  cs.setString(1, cus[1;31mtna[mme);
+[35mstart_engine.bat[m[36m:[mTITLE [1;31mTNA[m Audit System Pipeline Orchestrator
+[35mstart_engine.bat[m[36m:[mecho   STARTING [1;31mTNA[m SECURITY AUDIT SYSTEM MICROSERVICES

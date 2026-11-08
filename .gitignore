@@ -1,0 +1,20 @@
+*.safetensors
+.vscode/
+rag_knowledge_base/
+rag_sources/rag_knowledge_base/
+
+venv/
+.venv/
+__pycache__/
+.env
+*.log
+
+# training output
+model_final/checkpoint-*/
+*.pt
+*.pth
+*.bin
+optimizer.pt
+
+# generated data
+chroma_db/
