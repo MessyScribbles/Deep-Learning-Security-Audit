@@ -242,6 +242,4 @@ Knowledge base content comes from the OWASP Cheat Sheet Series and OWASP Top 10 
 
 ## Author
 
-**Mohamed El Hamzaoui**
-
 - GitHub: [@MessyScribbles](https://github.com/MessyScribbles)
